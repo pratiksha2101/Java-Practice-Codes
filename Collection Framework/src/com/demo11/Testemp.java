@@ -1,0 +1,28 @@
+package com.demo11;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+
+
+
+public class Testemp {
+
+	public static void main(String[] args) {
+		
+		
+		ArrayList<Employee> a1= new ArrayList<>();
+		a1.add(new Employee(1,"meena",20));
+		a1.add(new Employee(1,"heena",27));
+		a1.add(new Employee(1,"teena",30));
+		a1.add(new Employee(1,"reena",18));
+
+		
+		Collections.sort(a1);
+		for(Employee e:a1) {
+			System.out.println(e.id + " "+e.name + " "+e.age);
+		}
+
+	}
+
+}
